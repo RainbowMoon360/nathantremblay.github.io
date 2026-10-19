@@ -1409,8 +1409,8 @@ a:hover {
 }
 
 .icon--lg {
-  height: 3.75em;
-  width: 3.75em;
+  height: 4em;
+  width: 4em;
 }
 
 .icon--xl {
@@ -1424,8 +1424,8 @@ a:hover {
 }
 
 .icon--special2 {
-  height: 2.3em;
-  width: 2.3em;
+  height: 2.5em;
+  width: 2.5em;
 }
 
 .header {
@@ -1478,6 +1478,11 @@ a:hover {
   .presentation {
     padding-top: 0px;
   }
+}
+.presentation .name1,
+.presentation .name2 {
+  display: flex;
+  gap: 15px;
 }
 .presentation .title {
   display: flex;
@@ -1570,7 +1575,6 @@ a:hover {
   }
 }
 .presentation .grid_content .surtitle2 {
-  display: flex;
   align-items: flex-start;
   gap: 10px;
   margin-left: 20px;
@@ -1588,7 +1592,7 @@ a:hover {
   align-items: flex-start;
   gap: 10px;
   margin-left: 20px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 @media (width <= 1170px) {
   .presentation .grid_content .text {
@@ -1745,7 +1749,8 @@ a:hover {
 .projets .swiper-wrapper .swiper_content {
   width: 100%;
   height: 99%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 42%, rgb(0, 0, 0) 100%);
   position: absolute;
   z-index: 10;
   top: 0;
@@ -1892,9 +1897,8 @@ a:hover {
 }
 
 .footer {
+  background-color: var(--color-bg-secondary);
   padding: 35px 0;
-  border: 5px solid var(--color-primary);
-  border-bottom: 0px;
 }
 .footer .logo {
   font-size: clamp(2.25rem, 2.08vw + 1.63rem, 3.5rem);
@@ -2060,5 +2064,35 @@ a:hover {
 .has-js [data-scrolly=fromSpin].is-active {
   opacity: 1;
   transform: rotateY(0deg);
+}
+
+.page404 {
+  height: 73vh;
+  padding-top: 30vh;
+  text-align: center;
+}
+.page404 h1 {
+  font-size: clamp(3.75rem, 4.17vw + 2.5rem, 6.25rem);
+  margin-bottom: 60px;
+}
+.page404 .bouton {
+  padding: 20px 70px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 7px solid transparent;
+  border-radius: 15px;
+  margin-top: 70px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  font-size: clamp(0.94rem, 1.25vw + 0.56rem, 1.69rem);
+}
+.page404 .bouton:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+  border-color: var(--color-secondary);
 }
 /*# sourceMappingURL=main.css.map */
