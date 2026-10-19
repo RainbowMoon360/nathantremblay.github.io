@@ -1473,6 +1473,7 @@ a:hover {
   margin-top: 133px;
   padding: 30px 0;
   padding-bottom: 75px;
+  overflow-x: hidden;
 }
 @media (width <= 530px) {
   .presentation {
