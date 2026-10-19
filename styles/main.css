@@ -1648,6 +1648,7 @@ a:hover {
 
 .competences {
   background-color: var(--color-bg-secondary);
+  overflow-x: hidden;
 }
 .competences .wrapper {
   height: 100%;
@@ -1809,6 +1810,7 @@ a:hover {
 .youtube {
   padding: 70px 0;
   background-color: var(--color-bg-secondary);
+  overflow-x: hidden;
 }
 .youtube .title {
   display: flex;
@@ -1866,6 +1868,7 @@ a:hover {
 
 .contact {
   padding: 70px 0;
+  overflow-x: hidden;
 }
 .contact .title {
   display: flex;
