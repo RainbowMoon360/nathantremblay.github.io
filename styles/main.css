@@ -1773,7 +1773,9 @@ a:hover {
   color: var(--color-white);
   border: 7px solid transparent;
   border-radius: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-family: var(--font-secondary);
   font-size: clamp(0.94rem, 0.73vw + 0.72rem, 1.38rem);
@@ -1783,6 +1785,18 @@ a:hover {
     padding: 10px 30px;
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+@media (width <= 560px) {
+  .projets .swiper-wrapper .swiper_content .button {
+    padding: 10px 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (width <= 440px) {
+  .projets .swiper-wrapper .swiper_content .button {
+    margin-left: auto;
   }
 }
 .projets .swiper-wrapper .swiper_content .button:hover {
@@ -1805,6 +1819,12 @@ a:hover {
 @media (width <= 770px) {
   .projets .swiper-wrapper .swiper_content .wrapper {
     padding: 20px;
+  }
+}
+@media (width <= 440px) {
+  .projets .swiper-wrapper .swiper_content .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
