@@ -1409,8 +1409,8 @@ a:hover {
 }
 
 .icon--lg {
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
 }
 
 .icon--xl {
@@ -1419,13 +1419,13 @@ a:hover {
 }
 
 .icon--special {
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
 }
 
 .icon--special2 {
-  height: 2.5em;
-  width: 2.5em;
+  height: 2em;
+  width: 2em;
 }
 
 .header {
@@ -1637,8 +1637,14 @@ a:hover {
 @media (width <= 660px) {
   .presentation .grid_content .bouton {
     margin-left: 0;
-    width: 100%;
     text-align: center;
+  }
+}
+@media (width <= 560px) {
+  .presentation .grid_content .bouton {
+    padding: 10px 20px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .presentation .grid_content .bouton:hover {
@@ -1949,6 +1955,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.footer .part2 p {
+  font-weight: 700;
 }
 @media (width <= 650px) {
   .footer .part2 {
